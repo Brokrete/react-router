@@ -418,7 +418,7 @@ describe("A <NavLink>", () => {
   it("does not do strict matching by default", () => {
     renderStrict(
       <MemoryRouter initialEntries={["/pizza"]}>
-        <NavLink to="/pizza/">Pizza!</NavLink>
+        <NavLink to="/pizza">Pizza!</NavLink>
       </MemoryRouter>,
       node
     );
