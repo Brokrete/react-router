@@ -312,7 +312,7 @@ describe("A <Route>", () => {
 
       renderStrict(
         <MemoryRouter initialEntries={["/somepath"]}>
-          <Route exact path="/somepath/" render={() => <h1>{text}</h1>} />
+          <Route exact path="/somepath" render={() => <h1>{text}</h1>} />
         </MemoryRouter>,
         node
       );
